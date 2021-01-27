@@ -23,6 +23,10 @@ img{
     text-align: center;
 }
 
+/* display */
+.d-none{
+    display: none;
+}
 
 /* margin */
 .m-t-30{
@@ -31,6 +35,11 @@ img{
 
 .m-b-10{
     margin-bottom: 10px;
+}
+
+/* remove scroll */
+.no-scroll{
+    overflow: hidden;
 }
 
 /* button */
@@ -51,11 +60,40 @@ img{
     background-color: #FFD71B;
     border: 1px solid#FFD71B;
 }
+
 .btn-secondary{
     color: #eee;
     font-size: 22px;
     background-color: transparent;
     border: 1px solid #eee;
+}
+
+/* scroll bar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FFD71B;
+    border-radius: 2px;
+}
+
+::-webkit-scrollbar-track {
+    background:#111;
+}
+
+
+/* animation */
+@keyframes from-left {
+    0%{
+        transform:translateX(-100px);
+        opacity:0;
+    }
+
+    100%{
+        transform:translateY(0);
+        opacity:1;
+    }
 }
 
 .container{
@@ -86,6 +124,8 @@ body{
     font-weight: 400;
 }
 
+
+
 /* navbar start */
 
 .header{
@@ -94,6 +134,10 @@ body{
     left: 0;
     width: 100%;
     z-index: 1030;
+    transition: all 0.5s ease;
+}
+.header.on-scroll{
+    background-color: #111;
 }
 
 .header .nav{
@@ -101,10 +145,16 @@ body{
     justify-content: space-between;
     align-items: center;
     max-width: 1260px;
-    padding: 0 15px;
+    padding: 0 25px;
     margin: 0 auto;
     height: 100px;
     z-index: 1100;
+    transition: all 0.5s ease;
+}
+
+.header .nav.on-scroll{
+    height: 80px;
+    padding: 0 15px;
 }
 
 .header .nav .logo{
@@ -117,6 +167,7 @@ body{
 
 .header .nav .hamburger{
     z-index: 1100;
+    cursor: pointer;
 }
 
 .header .nav .hamburger span{
@@ -128,38 +179,40 @@ body{
     transition: all 0.3s ease-in-out;
 }
 
-/* .header .nav .hamburger span:nth-child(2){
-    width: 45px;
+.header .nav .hamburger.active span:nth-child(1){
+    transform: translateY(15px) rotate(-45deg);
 }
 
-.header .nav .hamburger span:nth-child(1){
-    width: 35px;
+.header .nav .hamburger.active span:nth-child(2){
+    opacity: 0;
 }
 
-.header .nav .hamburger span:nth-child(3){
-    width: 35px;
-} */
+.header .nav .hamburger.active span:nth-child(3){
+    transform: translateY(-15px) rotate(45deg);
+}
 
-/* .header .nav .menu{
+.header .nav .menu{
     position: fixed;
     top: 0;
-    right: 0;
-    width: 40%;
+    left: 0;
+    background: #000;
     height: 100%;
-    background-color: #888;
+    width: 100%;
     padding: 150px 30px 100px;
-    text-align: right;
+    text-align: center;
     z-index: 1000;
+    animation: from-left .5s ease-in;
+    color: #eee;
 }
 
-.header .nav .menu li{}
 .header .nav .menu li a{
     display: inline-block;
     color: #eee;
     font-size: 46px;
     font-weight: 400;
     margin: 20px;
-} */
+    letter-spacing: 1px;
+}
 
 /* navbar end */
 

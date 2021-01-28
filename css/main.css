@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+:root{
+    --primary-color: #FFD71B;
+    --secondary-color: #EEEEEE;
+    --text-color: #E6E6E6;
+    --background-color: #111111;
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -56,15 +64,15 @@ img{
 }
 
 .btn-primary{
-    color: #000000;
-    background-color: #FFD71B;
-    border: 1px solid#FFD71B;
+    color: var(--background-color);
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
 }
 
 .btn-secondary{
-    color: #eee;
+    color: var(--secondary-color);
     background-color: transparent;
-    border: 1px solid #eee;
+    border: 1px solid var(--secondary-color);
 }
 
 /* scroll bar */
@@ -73,12 +81,12 @@ img{
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #FFD71B;
+    background: var(--primary-color);
     border-radius: 2px;
 }
 
 ::-webkit-scrollbar-track {
-    background:#111;
+    background: var(--background-color);
 }
 
 
@@ -136,7 +144,7 @@ body{
     transition: all 0.5s ease;
 }
 .header.on-scroll{
-    background-color: #111;
+    background-color: var(--background-color);
 }
 
 .header .nav{
@@ -157,7 +165,7 @@ body{
 }
 
 .header .nav .logo{
-    color: #eee;
+    color: var(--secondary-color);
     font-family: 'roboto', sans-serif;
     font-size: 2.25rem;
     font-weight: 500;
@@ -173,7 +181,7 @@ body{
     display: block;
     height: 5px;
     width: 50px;
-    background-color: #eee;
+    background-color: var(--secondary-color);
     margin: 10px 0;
     transition: all 0.3s ease-in-out;
 }
@@ -194,19 +202,19 @@ body{
     position: fixed;
     top: 0;
     left: 0;
-    background: #000;
+    background: var(--background-color);
     height: 100%;
     width: 100%;
     padding: 150px 30px 100px;
     text-align: center;
     z-index: 1000;
     animation: from-left .5s ease-in;
-    color: #eee;
+    color: var(--secondary-color);
 }
 
 .header .nav .menu li a{
     display: inline-block;
-    color: #eee;
+    color: var(--secondary-color);
     font-size: 2.875rem;
     font-weight: 400;
     margin: 20px;
@@ -238,14 +246,14 @@ body{
 }
 
 .hero .hero-text h1{
-    color: #eee;
+    color: var(--secondary-color);
     font-size: 5.75rem;
     font-weight: 400;
     margin-bottom: 20px;
 }
 
 .hero .hero-text p{
-    color: #e6e6e6;
+    color: var(--text-color);
     font-size: 1.4rem;
     font-weight: 400;
     margin-bottom: 30px;
@@ -257,7 +265,7 @@ body{
 
 .our-story{
     padding: 120px 0;
-    background-color: #111;
+    background-color: var(--background-color);
 }
 
 .our-story .col{
@@ -267,20 +275,20 @@ body{
 }
 
 .our-story .col h3{
-    color: #FFD71B;
+    color: var(--primary-color);
     font-size: 1.4rem;
     font-weight: 400;
 }
 
 .our-story .col h2{
-    color: #eee;
+    color: var(--secondary-color);
     font-size: 2.875rem;
     font-weight: 400;
     margin-bottom: 15px;
 }
 
 .our-story .col p{
-    color: #e6e6e6;
+    color: var(--text-color);
     font-family: 'roboto', sans-serif;
     font-size: 1.1rem;
     font-weight: 400;
@@ -298,7 +306,8 @@ body{
 .feature-one{
     padding: 130px 0;
     background-image: url(../img/banner/background-2.jpg);
-    background-color: #111;
+    background-color: var(--background-color);
+    background-color: var(--background-color);
     background-repeat: none;
     background-position: center;
     background-size: cover;
@@ -313,13 +322,13 @@ body{
     padding: 20px 10px;
 }
 .feature-one .col h2{
-    color: #eee;
+    color: var(--secondary-color);
     font-size: 2.875rem;
     font-weight: 400;
     margin-bottom: 20px;
 }
 .feature-one .col p{
-    color: #e6e6e6;
+    color: var(--text-color);
     font-family: 'roboro', sans-serif;
     font-size: 1.1rem;
     font-weight: 400;
@@ -332,7 +341,7 @@ body{
 /* our menu section start */
 .our-menu{
     padding: 130px 0;
-    background-color: #111;
+    background-color: var(--background-color);
 }
 
 .our-menu .col{
@@ -341,20 +350,20 @@ body{
     padding: 0 15px;
 }
 .our-menu .col h3{
-    color: #FFD71B;
+    color: var(--primary-color);
     font-size: 22px;
     font-weight: 400;
 }
 
 .our-menu .col h2{
-    color: #eee;
+    color: var(--secondary-color);
     font-size: 2.875rem;
     font-weight: 400;
     margin-bottom: 15px;
 }
 
 .our-menu .col p{
-    color: #e6e6e6;
+    color: var(--text-color);
     font-size: 1.1rem;
     font-weight: 400;
     font-family: 'roboto', sans-serif;
@@ -376,14 +385,14 @@ body{
 }
 
 .feature-two .section-title h3{
-    color: #FFD71B;
+    color: var(--primary-color);
     font-size: 1.1rem;
     font-weight: 400;
 }
 
 .feature-two .section-title h2{
-    color: #eee;
-    font-size: 2.875.rem;
+    color: var(--secondary-color);
+    font-size: 2.875rem;
     font-weight: 400;
 }
 
@@ -407,7 +416,7 @@ body{
 .feature-two .feature-two-item .icon{
     height: 69px;
     width: 69px;
-    background-color: #FFD71B;
+    background-color: var(--primary-color);
     border-radius: 50%;
     padding: 20px;
     margin-bottom: 30px;
@@ -420,7 +429,7 @@ body{
 }
 
 .feature-two .feature-two-item h3{
-    color: #eee;
+    color: var(--secondary-color);
     font-size: 1.4rem;
     font-weight: 400;
     text-transform: capitalize;
@@ -428,7 +437,7 @@ body{
 }
 
 .feature-two .feature-two-item p{
-    color: #e6e6e6;
+    color: var(--text-color);
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.75;
@@ -461,14 +470,14 @@ body{
 }
 
 .testimonial .section-title h3{
-    color: #FFD71B;
+    color: var(--primary-color);
     font-size: 1.4rem;
     font-weight: 400;
 }
 
 .testimonial .section-title h2{
-    color: #eee;
-    font-size: 2.875.rem;
+    color: var(--secondary-color);
+    font-size: 2.875rem;
     font-weight: 400;
 }
 
@@ -485,7 +494,7 @@ body{
 }
 
 .testimonial .testimonial-item p{
-    color: #e6e6e6;
+    color: var(--text-color);
     font-size: 1rem;
     font-weight: 400;
     font-style: italic;
@@ -494,7 +503,7 @@ body{
 }
 
 .testimonial .testimonial-item h3{
-    color: #eee;
+    color: var(--secondary-color);
     font-size: 1.4rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -502,7 +511,7 @@ body{
 }
 
 .testimonial .testimonial-item h6{
-    color: #eee;
+    color: var(--secondary-color);
     font-size: 0.7rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -514,7 +523,7 @@ body{
 /* our shots section start */
 .our-shots{
     padding: 130px 0;
-    background-color: #111;
+    background-color: var(--background-color);
 }
 
 .our-shots img{
@@ -572,13 +581,13 @@ body{
 }
 
 .our-shots .section-title h3{
-    color: #FFD71B;
+    color: var(--primary-color);
     font-size: 1.4rem;
     font-weight: 400;
 }
 
 .our-shots .section-title h2{
-    color: #eee;
+    color: var(--secondary-color);
     font-size: 2.875rem;
     font-weight: 400;
 }
@@ -602,13 +611,13 @@ body{
 }
 
 .contact-us .section-title h3{
-    color: #FFD71B;
+    color: var(--primary-color);
     font-size: 1.1rem;
     font-weight: 400;
 }
 
 .contact-us .section-title h2{
-    color: #eee;
+    color: var(--secondary-color);
     font-size: 2.875rem;
     font-weight: 400;
 }
@@ -626,7 +635,7 @@ body{
 .contact-us .contact-us-item .icon{
     height: 70px;
     width: 70px;
-    background-color: #111;
+    background-color: var(--background-color);
     padding: 20px;
     border-radius: 50%;
     margin-left: auto;
@@ -640,14 +649,14 @@ body{
 }
 
 .contact-us .contact-us-item h3{
-    color: #eee;
+    color: var(--secondary-color);
     font-size: 1.1rem;
     font-weight: 400;
     margin-bottom: 5px;
 }
 
 .contact-us .contact-us-item p{
-    color: #e6e6e6;
+    color: var(--text-color);
     font-family: 'roboto', sans-serif;
     font-size: 1rem;
     text-transform: capitalize;
@@ -668,7 +677,7 @@ body{
     margin-bottom: 50px;
 }
 .footer .section-title h2{
-    color: #FFD71B;
+    color: var(--secondary-color);
     font-size: 2.875rem;
     font-weight: 400;
 }
@@ -699,13 +708,13 @@ body{
 
 .footer .footer-menu li .nav-link{
     display: inline-block;
-    color: #eee;
+    color: var(--secondary-color);
     font-size: 1.1rem;
     font-weight: 400;
 }
 
 .footer .credits p{
-    color: #eee;
+    color: var(--secondary-color);
     font-size: 1rem;
     font-weight: 400;
 }

@@ -48,22 +48,21 @@ img{
     padding: 12px 32px;
     text-align: center;
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 22px;
+    font-size: 1.4rem;
     font-weight: 400;
     outline: none;
     margin: 0 5px;
+    cursor: pointer;
 }
 
 .btn-primary{
     color: #000000;
-    font-size: 22px;
     background-color: #FFD71B;
     border: 1px solid#FFD71B;
 }
 
 .btn-secondary{
     color: #eee;
-    font-size: 22px;
     background-color: transparent;
     border: 1px solid #eee;
 }
@@ -160,7 +159,7 @@ body{
 .header .nav .logo{
     color: #eee;
     font-family: 'roboto', sans-serif;
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: 500;
     z-index: 1010;
 }
@@ -208,7 +207,7 @@ body{
 .header .nav .menu li a{
     display: inline-block;
     color: #eee;
-    font-size: 46px;
+    font-size: 2.875rem;
     font-weight: 400;
     margin: 20px;
     letter-spacing: 1px;
@@ -222,7 +221,7 @@ body{
 .hero{
     height: 100vh;
     background-image: url(../img/banner/background-1.jpg);
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -240,14 +239,14 @@ body{
 
 .hero .hero-text h1{
     color: #eee;
-    font-size: 92px;
+    font-size: 5.75rem;
     font-weight: 400;
     margin-bottom: 20px;
 }
 
 .hero .hero-text p{
     color: #e6e6e6;
-    font-size: 22px;
+    font-size: 1.4rem;
     font-weight: 400;
     margin-bottom: 30px;
 }
@@ -269,13 +268,13 @@ body{
 
 .our-story .col h3{
     color: #FFD71B;
-    font-size: 22px;
+    font-size: 1.4rem;
     font-weight: 400;
 }
 
 .our-story .col h2{
     color: #eee;
-    font-size: 46px;
+    font-size: 2.875rem;
     font-weight: 400;
     margin-bottom: 15px;
 }
@@ -283,7 +282,7 @@ body{
 .our-story .col p{
     color: #e6e6e6;
     font-family: 'roboto', sans-serif;
-    font-size: 18px;
+    font-size: 1.1rem;
     font-weight: 400;
     line-height: 1.75;
 }
@@ -315,14 +314,14 @@ body{
 }
 .feature-one .col h2{
     color: #eee;
-    font-size: 46px;
+    font-size: 2.875rem;
     font-weight: 400;
     margin-bottom: 20px;
 }
 .feature-one .col p{
     color: #e6e6e6;
     font-family: 'roboro', sans-serif;
-    font-size: 18px;
+    font-size: 1.1rem;
     font-weight: 400;
     line-height: 1.75;
     margin-bottom: 30px;
@@ -349,14 +348,14 @@ body{
 
 .our-menu .col h2{
     color: #eee;
-    font-size: 46px;
+    font-size: 2.875rem;
     font-weight: 400;
     margin-bottom: 15px;
 }
 
 .our-menu .col p{
     color: #e6e6e6;
-    font-size: 18px;
+    font-size: 1.1rem;
     font-weight: 400;
     font-family: 'roboto', sans-serif;
     line-height: 1.75;
@@ -378,13 +377,13 @@ body{
 
 .feature-two .section-title h3{
     color: #FFD71B;
-    font-size: 22px;
+    font-size: 1.1rem;
     font-weight: 400;
 }
 
 .feature-two .section-title h2{
     color: #eee;
-    font-size: 46px;
+    font-size: 2.875.rem;
     font-weight: 400;
 }
 
@@ -422,7 +421,7 @@ body{
 
 .feature-two .feature-two-item h3{
     color: #eee;
-    font-size: 22px;
+    font-size: 1.4rem;
     font-weight: 400;
     text-transform: capitalize;
     margin-bottom: 15px;
@@ -430,7 +429,7 @@ body{
 
 .feature-two .feature-two-item p{
     color: #e6e6e6;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 1.75;
 }
@@ -463,13 +462,13 @@ body{
 
 .testimonial .section-title h3{
     color: #FFD71B;
-    font-size: 22px;
+    font-size: 1.4rem;
     font-weight: 400;
 }
 
 .testimonial .section-title h2{
     color: #eee;
-    font-size: 46px;
+    font-size: 2.875.rem;
     font-weight: 400;
 }
 
@@ -487,7 +486,7 @@ body{
 
 .testimonial .testimonial-item p{
     color: #e6e6e6;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     font-style: italic;
     line-height: 1.75;
@@ -496,7 +495,7 @@ body{
 
 .testimonial .testimonial-item h3{
     color: #eee;
-    font-size: 22px;
+    font-size: 1.4rem;
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 10px;
@@ -504,7 +503,7 @@ body{
 
 .testimonial .testimonial-item h6{
     color: #eee;
-    font-size: 12px;
+    font-size: 0.7rem;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -574,13 +573,13 @@ body{
 
 .our-shots .section-title h3{
     color: #FFD71B;
-    font-size: 22px;
+    font-size: 1.4rem;
     font-weight: 400;
 }
 
 .our-shots .section-title h2{
     color: #eee;
-    font-size: 46px;
+    font-size: 2.875rem;
     font-weight: 400;
 }
 
@@ -604,13 +603,13 @@ body{
 
 .contact-us .section-title h3{
     color: #FFD71B;
-    font-size: 22px;
+    font-size: 1.1rem;
     font-weight: 400;
 }
 
 .contact-us .section-title h2{
     color: #eee;
-    font-size: 46px;
+    font-size: 2.875rem;
     font-weight: 400;
 }
 
@@ -642,7 +641,7 @@ body{
 
 .contact-us .contact-us-item h3{
     color: #eee;
-    font-size: 22px;
+    font-size: 1.1rem;
     font-weight: 400;
     margin-bottom: 5px;
 }
@@ -650,7 +649,7 @@ body{
 .contact-us .contact-us-item p{
     color: #e6e6e6;
     font-family: 'roboto', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     text-transform: capitalize;
     line-height: 1.75;
 }
@@ -670,7 +669,7 @@ body{
 }
 .footer .section-title h2{
     color: #FFD71B;
-    font-size: 46px;
+    font-size: 2.875rem;
     font-weight: 400;
 }
 
@@ -701,13 +700,13 @@ body{
 .footer .footer-menu li .nav-link{
     display: inline-block;
     color: #eee;
-    font-size: 18px;
+    font-size: 1.1rem;
     font-weight: 400;
 }
 
 .footer .credits p{
     color: #eee;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
 }
 
@@ -836,7 +835,7 @@ container mobile 540px
     }
 
     .hero .hero-text h1{
-        font-size: 60px;
+        font-size: 3.75rem;
     }
 
     .testimonial .col {

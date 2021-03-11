@@ -551,7 +551,7 @@ section{
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto;
-    gap: 15px;
+    gap: 30px;
     grid-template-areas:
     "one one two three"
     "one one six six"

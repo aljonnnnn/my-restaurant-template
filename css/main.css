@@ -6,7 +6,6 @@
     --secondary-color: #EEEEEE;
     --text-color: #E6E6E6;
     --background-color: #111111;
-
 }
 
 
@@ -154,6 +153,10 @@ img{
     align-items: center;
 }
 
+.align-item-start{
+    align-items: flex-start !important;
+}
+
 .justify-space-between{
     justify-content: space-between;
 }
@@ -181,6 +184,11 @@ body{
     font-family: 'Bebas Neue', sans-serif;
     font-size: 16px;
     font-weight: 400;
+}
+
+
+section{
+    padding: 130px 0;
 }
 
 
@@ -319,7 +327,6 @@ body{
 /* our story section start */
 
 .our-story{
-    padding: 120px 0;
     background-color: var(--background-color);
 }
 
@@ -346,9 +353,8 @@ body{
 /* feature one section start*/
 
 .feature-one{
-    padding: 130px 0;
     background-image: url(../img/banner/background-2.jpg);
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -380,7 +386,6 @@ body{
 
 /* our menu section start */
 .our-menu{
-    padding: 130px 0;
     background-color: var(--background-color);
 }
 
@@ -423,7 +428,6 @@ body{
 /* feature two section start */
 
 .feature-two{
-    padding: 130px 0;
     background-color: #111;
 }
 
@@ -435,7 +439,7 @@ body{
 }
 
 .feature-two .feature-two-item{
-    padding: 20px;
+    padding: 20px 0;
 }
 
 .feature-two .feature-two-item .icon{
@@ -474,7 +478,6 @@ body{
 /* testimonial section start */
 
 .testimonial{
-    padding: 130px 0;
     background-image: url(../img/banner/background-2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -531,7 +534,6 @@ body{
 
 /* our shots section start */
 .our-shots{
-    padding: 130px 0;
     background-color: var(--background-color);
 }
 
@@ -555,7 +557,6 @@ body{
     "one one six six"
     "four five six six";
 }
-
 
 .item{
     border-radius: 10px;
@@ -593,7 +594,6 @@ body{
 /* contact us section start */
 
 .contact-us{
-    padding: 130px 0;
     background-image: url(../img/banner/background-2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -717,15 +717,6 @@ body{
 
 
 
-
-
-/* 
-container  laptop / large tablet width 1260px
-container small tablet 992px
-container large mobile 700px
-container mobile 540px
-*/
-
 /* large tablet or small laptop */
 @media (max-width: 1200px) {
     .container{
@@ -807,6 +798,10 @@ container mobile 540px
 
 /* small phone */
 @media (max-width: 576px) {
+
+    section{
+        padding: 80px 0;
+    }
     .container{
         width: 100%;
     }
@@ -831,6 +826,10 @@ container mobile 540px
     
     .m-sm-b-20{
         margin-bottom: 20px;
+    }
+    
+    .m-sm-b-60{
+        margin-bottom: 60px;
     }
 
     .hero .hero-text{
